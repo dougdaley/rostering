@@ -1,6 +1,9 @@
 FROM ubuntu:14.04
 ENV DEBIAN_FRONTEND noninteractive
 ENV PYTHONPATH $PYTHONPATH:/src/
+ENV REDIS_HOST kpmgrostercache.redis.cache.windows.net
+ENV REDIS_PORT 6379
+ENV SQLALECHEMY_DATABASE_URI mysql://kpmgadmin:Passw0rd1@kpmgrosterdb.mysql.database.azure.com/prod
 
 # setup tools
 RUN apt-get update --yes --force-yes

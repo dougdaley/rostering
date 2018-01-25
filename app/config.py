@@ -7,7 +7,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class DefaultConfig:
     DEBUG = False
     ENV = "prod"  # leave this
-    URL = os.environ.get("BASE_URL", "https://suite.staffjoy.com")
+    URL = os.environ.get("BASE_URL", "http://kpmgdemocontaineragents.australiaeast.cloudapp.azure.com")
 
     # Toggle this if you don't want randoms from the internet creating companies
     ALLOW_COMPANY_SIGNUPS = True
@@ -29,7 +29,7 @@ class DefaultConfig:
     SECRET_KEY = os.environ.get("SECRET_KEY")
 
     # Link to job application form
-    CAREER_APPLICATION_URL = "https://staffjoy.com"
+    CAREER_APPLICATION_URL = "http://kpmgdemocontaineragents.australiaeast.cloudapp.azure.com"
 
     # Incident Tracking (optional) 
     STATUS_PAGE_ID = os.environ.get("STATUS_PAGE_ID")
